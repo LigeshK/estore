@@ -9,10 +9,10 @@ const Products = () => {
     { pName: "Boots", price: 49, img: "shop-5.jpg" },
   ];
   return (
-    <div>
+    <div className='products-container'>
       {productData.map((product, key) => {
         return (
-          <div className="mx-5 p-3 col-lg-3 col-md-6 product-card">
+          <div className="mx-5 p-3 product-card">
             <div className="product-image-container">
               <img
                 src={require("../../assets/images/shop/"+product.img)}
