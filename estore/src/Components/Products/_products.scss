@@ -1,0 +1,30 @@
+@import '../../style/sass/mixins';
+
+@include style-reset-a-li;
+
+.product-card{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 3px 1px 14px 0px lightgray;
+    border-radius: 0.6em;
+
+    .product-image-container{
+        img{
+            margin-left: 8%;
+            border-radius: 0.4em;
+        }
+    }
+    .product-info{
+        padding: 1em;
+        text-align: center;
+
+        h5{
+            font-weight: 700;
+        }
+        .product-price{
+            margin: 0;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    }
+}
