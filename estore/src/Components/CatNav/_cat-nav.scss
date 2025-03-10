@@ -20,21 +20,7 @@
             font-size: 0.9em;
             font-weight: 700;
 
-            &::after{
-                content: '';
-                display: block;
-                bottom: 0;
-                left: 0;
-                height: 0.2em;
-                background-color: $accent-color;
-                transform: scaleX(0);
-                @include transition(transform,0.2s)
-            }
-            &:hover{
-                &::after{
-                    transform: scaleX(1.1);
-                }
-            }
+            @include underline-transition(1.1);
         }
     }
 }

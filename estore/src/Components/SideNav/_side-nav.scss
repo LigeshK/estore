@@ -1,3 +1,5 @@
+@import '../../style/sass/mixins';
+@import '../../style/sass/variables';
 
 .side-nav{
     margin-top: 1em;
@@ -26,6 +28,7 @@
             a{
                 text-decoration: none;
                 color: black;
+                @include underline-transition(0.3);
             }
         }
     }
