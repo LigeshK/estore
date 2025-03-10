@@ -22,7 +22,7 @@ const SideNav = ()=>{
                             <ul>
                                 <li className='sub-items'> <a href='#'>Coats</a> </li>
                                 <li className='sub-items'> <a href='#'>Boots</a> </li>
-                                <li className='sub-items'> <a href='#'>Part Wear</a> </li>
+                                <li className='sub-items'> <a href='#'>Party Wear</a> </li>
                                 <li className='sub-items'> <a href='#'>Shirts</a> </li>
                             </ul>
                         </div>
