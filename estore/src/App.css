@@ -1,0 +1,38 @@
+
+.header{
+  max-width: 100%;
+  box-shadow: 5px 5px 20px gray;
+}
+
+.row div{
+  display: inline-block;
+}
+
+.brand{
+  color: white;
+  margin-left: 2%;
+  padding: 0.8em;
+  width: 23%;
+}
+
+.inp-container input{
+  display: inline-block;
+  width: 90%;
+  height: 2.5em;
+}
+.inp-container button{
+  width: 10%;
+  height: 2.5em;
+  border: none;
+  background-color: #dadada;
+}
+
+.dropdown{
+  width: 15%;
+}
+.select-btn{
+  height: 2.5em;
+  border: none;
+  background-color: #dadada;
+  font-weight: 600;
+}
