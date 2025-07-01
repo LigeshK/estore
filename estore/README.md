@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# 🛒 Full-Stack eStore (React + Node.js + MySQL)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **eStore Project**, a modern full-stack e-commerce web application designed to simulate real-world shopping experiences. This project is built using **React 18**, **Node.js**, **Express.js**, and **MySQL**, incorporating scalable architecture, modern libraries, and clean design principles.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+The **eStore** is a dynamic and interactive online shopping platform developed to demonstrate frontend and backend capabilities using the latest web technologies. It includes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔐 **Google Authentication** for secure login
+- 🛍️ **Product Listing** with filtering and sorting
+- 🛒 **Shopping Cart** with add/update/delete functionality
+- 📱 **Responsive UI** using Bootstrap 5 and Flexbox
+- 📦 **Redux Toolkit** for global state management
+- 🔀 **React Router v6** for routing and navigation
+- ⚙️ **Express.js + Node.js** backend APIs
+- 🗄️ **MySQL** as the relational database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🎯 Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+By the end of this project, you will have:
 
-### `npm run build`
+- A fully responsive product catalog
+- Complete cart functionality (add, update, remove items)
+- Product filtering (by category, price, etc.)
+- Google Sign-In using OAuth
+- Full-stack RESTful API integration
+- Modular, scalable, and maintainable project structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧰 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Technology        | Description                     |
+| ----------------- | ------------------------------- |
+| React 18          | Frontend JavaScript library     |
+| Redux Toolkit     | Global state management         |
+| React Router v6   | Client-side routing             |
+| Bootstrap 5       | UI framework for styling        |
+| Flexbox           | CSS layout for responsiveness   |
+| Node.js + Express | Backend API and server logic    |
+| MySQL             | Relational database             |
+| Google OAuth API  | Authentication and user sign-in |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✅ Final Output
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+By the end of the project, users will be able to:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 🔍 Browse and filter products
+- ➕ Add, update, and remove items in the cart
+- 🔐 Log in securely using Google OAuth
+- 💻 Interact with a modern, responsive UI
+- 🔁 Experience seamless communication between frontend and backend using REST APIs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
