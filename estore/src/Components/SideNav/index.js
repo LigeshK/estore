@@ -8,7 +8,7 @@ const SideNav = () => {
   return (
     <div className="side-nav">
       <div className="section-title">
-        <h3>Category</h3>
+        <h3>Category Detail</h3>
       </div>
 
       <div className="accordion">
@@ -35,7 +35,6 @@ const SideNav = () => {
                     {accordionCategory.items.map((item, itemKey) => {
                       return (
                         <li className="sub-items" key={itemKey}>
-                          {" "}
                           <a href="#">{item}</a>{" "}
                         </li>
                       );
