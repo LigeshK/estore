@@ -8,7 +8,7 @@ const pool = connectionSettings(); // Get connection pool
 
 // GET /productCategories - Fetch all product categories
 productCategories.get("/", (req, res) => {
-  pool.query("SELECT * FROM product_categories", (err, results) => {
+  pool.query("SELECT * FROM categories", (err, results) => {
     if (err) {
       res.status(500).json({ error: "Query execution failed: " + err.message });
     } else {
