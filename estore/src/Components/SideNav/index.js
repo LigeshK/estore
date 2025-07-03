@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import accordionSlice from "../../store/slices/accordionCatSlice";
+import accordionSlice from "../../Redux/Accordion/accordionSlice";
 import "./_side-nav.scss";
 
 const SideNav = () => {
@@ -8,7 +8,7 @@ const SideNav = () => {
   return (
     <div className="side-nav">
       <div className="section-title">
-        <h3>Category Detail</h3>
+        <h3>Category</h3>
       </div>
 
       <div className="accordion">
