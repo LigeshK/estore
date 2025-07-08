@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getProducts } from "./productAction";
 
 // This slice is used to manage the state of products in the Redux store
-// It initializes the state with an empty products array, idle status, and no error
 
 const initialState = {
   products: [],
@@ -11,9 +10,20 @@ const initialState = {
 };
 
 const productSlice = createSlice({
-  name: "product",
+  name: "products",
   initialState,
-  reducers: {},
+  reducers: {
+    // This reducer filters products based on the selected category
+    // It takes the current state and an action payload containing the selected category
+    filterProducts: (state, action) => {
+      const filteredData = action.payload.products.filter((elem) => {
+        return elem.category_id === action.payload.selectedCategory.id; // This line filters products based on the selected category
+      });
+      state.products = filteredData;
+    },
+    // It updates the products state with the filtered data
+  },
+  // This extra reducer handles the asynchronous action of fetching products
   extraReducers: (builder) => {
     builder
       .addCase(getProducts.pending, (state) => {
@@ -29,5 +39,6 @@ const productSlice = createSlice({
       });
   },
 });
-
+// Exporting the actions and reducer from the product slice
+export const { filterProducts } = productSlice.actions;
 export default productSlice.reducer;

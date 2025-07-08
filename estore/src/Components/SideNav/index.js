@@ -1,18 +1,32 @@
 import { useDispatch, useSelector } from "react-redux";
-import accordionSlice from "../../Redux/Accordion/accordionSlice";
 import "./_side-nav.scss";
-import { use, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getCategories } from "../../Redux/Category/actions";
+import { filterProducts } from "../../Redux/Product/productSlice";
 
 const SideNav = () => {
   const accordionData = useSelector(
     (state) => state.categoryReducer.categories
-  );
-  const dispatch = useDispatch();
+  ); // Fetching categories from the Redux store
+  // This data is used to populate the side navigation with categories and subcategories
+  const fetchedProductData = useSelector((state) => state.productReducer); // Fetching product data from the Redux store
+  const [products, setProducts] = useState(); // Local state to hold products
+  const dispatch = useDispatch(); // Dispatch function to send actions to the Redux store
 
   useEffect(() => {
     dispatch(getCategories);
-  }, []);
+  }, []); // Fetching categories when the component mounts
+
+  useEffect(() => {
+    setProducts(fetchedProductData.products);
+  }, [fetchedProductData.status]); // Updating local products state when fetched product data changes
+
+  const filterData = (selectedCategory) => {
+    console.log("Selected Category:", selectedCategory);
+    console.log("Products:", products);
+    const payload = { selectedCategory, products };
+    dispatch(filterProducts(payload));
+  }; // Function to filter products based on the selected category
 
   return (
     <div className="side-nav">
@@ -50,7 +64,12 @@ const SideNav = () => {
                         ) {
                           return (
                             <li className="sub-items" key={subCategory.id}>
-                              <a href="#">{subCategory.category}</a>{" "}
+                              <a
+                                href="#"
+                                onClick={() => filterData(subCategory)}
+                              >
+                                {subCategory.category}
+                              </a>
                             </li>
                           );
                         }
